@@ -26,3 +26,17 @@ lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mea
                                                                                Variance=var(PSI),
                                                                                SD=sd(PSI),
                                                                                .groups = 'keep') 
+
+# perform t-test for each manufacturing lot and overall population
+# filter each lot data
+lot1 <- subset(Suspension_Coil, Manufacturing_Lot=='Lot1') 
+lot2 <- subset(Suspension_Coil, Manufacturing_Lot=='Lot2') 
+lot3 <- subset(Suspension_Coil, Manufacturing_Lot=='Lot3') 
+
+t.test(lot1$PSI,mu=1500) 
+t.test(lot2$PSI,mu=1500) 
+t.test(lot3$PSI,mu=1500) 
+
+
+
+
