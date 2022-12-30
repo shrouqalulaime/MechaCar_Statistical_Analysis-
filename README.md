@@ -32,5 +32,14 @@ A T-test is performed to check if each manufacturing lot PSI data is statistical
 
 <img width="432" alt="Screenshot 2022-12-30 at 1 35 45 PM" src="https://user-images.githubusercontent.com/48078471/210113269-5c87fd54-9396-4ed3-aece-a9a03e37c5b5.png">
 
+## Study Design: MechaCar vs Competition
 
+A/B testing is planned to be done to understand how MechaCar is performing relative to its competitor:
+- Evaluation metric for the targeted customers: horsepower
+- Null Hypothesis (H0): MechaCar and its competitor's mean horsepower is NOT statistically different from each other 
+- Alternative hypothesis (Ha): MechaCar and its competitor's mean horsepower is statistically different from each other
+- Statistical test: two-sample t-test
+- Study parameters: significance of level (0.05), power of the test (80%)
+- Dataset needed: based on study parameters (0.05 alpha and 80% power), an appropriate sample size needs to be collected for the horsepower of MechaCar and its competitor
+- By comparing the p-value of the t-test to our significance of level, a conclusion about MechaCar business performance relative to its competitor can be drawn
 
